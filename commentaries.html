@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://files.catbox.moe/lvguf7.png">
+  <title>Biblical Theology</title>
+  <meta name="description" content="Alphabetical index of moral‑theology authors." />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #f6f5eb;
+      --ink: #1a1a1a;
+      --accent: #8a734c;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "Crimson Text", serif;
+      font-size: 18px;
+      height: 100%;
+      scroll-behavior: smooth;
+    }
+
+    .home-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #222;
+      border: 1px solid #555;
+      color: #ccc;
+      padding: 6px 12px;
+      font-size: 14px;
+      border-radius: 4px;
+      text-decoration: none;
+      z-index: 1100;
+    }
+
+    .home-button:hover {
+      background: #333;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0 0 20px;
+      font-size: 42px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 20px 0 10px;
+    }
+
+    .banner {
+      display: block;
+      margin: 0 auto 30px;
+      max-width: 300px;
+      width: 60%;
+      height: auto;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+    }
+
+    .alpha-nav {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      background: rgba(0, 0, 0, 0.05);
+      padding: 6px 4px;
+      border-radius: 6px 0 0 6px;
+      z-index: 1000;
+    }
+
+    .alpha-nav a {
+      display: block;
+      padding: 2px 6px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: none;
+      border-radius: 4px;
+      text-align: center;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .alpha-nav a:hover {
+      background: var(--accent);
+      color: #fff;
+      transform: translateX(-6px) scale(1.1);
+    }
+
+    section[id^="letter-"] {
+      margin-bottom: 50px;
+    }
+
+    details summary {
+      background: var(--cream);
+      border: 1px solid var(--accent);
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    details[open] > summary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .books {
+      padding: 8px 20px;
+      margin: 6px 0 6px 40px;
+      border-left: 2px solid var(--accent);
+    }
+
+    .books a {
+      display: block;
+      color: var(--ink);
+      text-decoration: underline;
+      margin: 4px 0;
+    }
+
+    .books a:hover {
+      color: var(--accent);
+    }
+
+    .search-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #search {
+      padding: 8px;
+      font-size: 16px;
+      width: 60%;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+    }
+
+    .note {
+      max-height: 0;
+      overflow: hidden;
+      background: #fff8dc;
+      border: 1px solid #d3b673;
+      padding: 0 10px;
+      margin: 0 40px;
+      font-style: italic;
+      opacity: 0;
+      transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    }
+
+    .note.show {
+      max-height: 200px;
+      opacity: 1;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="home-button">Home</a>
+
+  <nav class="alpha-nav" aria-label="Author index">
+    <a href="#letter-A">A</a><a href="#letter-B">B</a><a href="#letter-C">C</a><a href="#letter-D">D</a><a href="#letter-E">E</a><a href="#letter-F">F</a><a href="#letter-G">G</a><a href="#letter-H">H</a><a href="#letter-I">I</a><a href="#letter-J">J</a><a href="#letter-K">K</a><a href="#letter-L">L</a><a href="#letter-M">M</a><a href="#letter-N">N</a><a href="#letter-O">O</a><a href="#letter-P">P</a><a href="#letter-Q">Q</a><a href="#letter-R">R</a><a href="#letter-S">S</a><a href="#letter-T">T</a><a href="#letter-U">U</a><a href="#letter-V">V</a><a href="#letter-W">W</a><a href="#letter-X">X</a><a href="#letter-Y">Y</a><a href="#letter-Z">Z</a>
+  </nav>
+
+  <main>
+    <h1>Biblical Theology</h1>
+    <img class="banner" src="https://ocdfriarsvocation.org/wp-content/uploads/2015/10/ocdVocations_stTheresa_and_stJohn_of_the_Cross.jpg" alt="St. Theresa and St. John of the Cross">
+
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Search authors or books...">
+    </div>
+
+    <div id="author-sections"></div>
+  </main>
+
+  <script>
+    const authorSections = document.getElementById("author-sections");
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    letters.split("").forEach(letter => {
+      const section = document.createElement("section");
+      section.id = `letter-${letter}`;
+      section.innerHTML = `<h2>${letter}</h2>`;
+
+      for (let i = 1; i <= 3; i++) {
+        const details = document.createElement("details");
+        const summary = document.createElement("summary");
+        summary.innerHTML = `Author ${letter}${i} <a href="#" class="toggle-note">&#8225;</a>`;
+
+        const books = document.createElement("div");
+        books.className = "books";
+        books.innerHTML = `<a href="#">Work ${letter}${i}</a>`;
+
+        const note = document.createElement("div");
+        note.className = "note";
+        note.textContent = `Note for Author ${letter}${i}`;
+
+        details.appendChild(summary);
+        details.appendChild(books);
+        details.appendChild(note);
+        section.appendChild(details);
+      }
+
+      authorSections.appendChild(section);
+    });
+
+    document.addEventListener("click", function(e) {
+      if (e.target.matches(".toggle-note")) {
+        e.preventDefault();
+        const note = e.target.closest("details").querySelector(".note");
+        note.classList.toggle("show");
+      }
+    });
+
+    document.getElementById("search").addEventListener("input", function () {
+      const query = this.value.toLowerCase();
+      const details = document.querySelectorAll("details");
+
+      details.forEach(detail => {
+        const author = detail.querySelector("summary").innerText.toLowerCase();
+        const books = Array.from(detail.querySelectorAll(".books a"));
+        const bookMatch = books.some(book => book.innerText.toLowerCase().includes(query));
+
+        if (author.includes(query) || bookMatch) {
+          detail.style.display = "block";
+        } else {
+          detail.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
