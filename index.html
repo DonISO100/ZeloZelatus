@@ -1,130 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zelo Zelatus</title>
-  <meta name="description" content="Zelo Zelatus: A site devoted to mystical and biblical Catholic theology.">
-  <meta name="keywords" content="Zelo Zelatus, mystical theology, biblical commentaries, Catholic tradition, St. Teresa of Avila">
-  <meta property="og:title" content="Zelo Zelatus" />
-  <meta property="og:description" content="Explorations in Catholic mystical and biblical theology." />
-  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/7/74/Peter_Paul_Rubens_166.jpg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.com/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Zelo Zelatus" />
-  <meta name="twitter:description" content="Explorations in Catholic mystical and biblical theology." />
-  <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/7/74/Peter_Paul_Rubens_166.jpg" />
-  <link rel="icon" href="https://files.catbox.moe/lvguf7.png">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: #2e2417;
-      font-family: 'Crimson Text', serif;
-      color: #e8e2d6;
-      margin: 0;
-      padding: 0;
-      line-height: 1.7;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelo Zelatus - Scholastic Studies</title>
+    <style>
+        body {
+            background-color: #331a20; 
+            color: #e0d8c3; 
+            font-family: "Book Antiqua", "Palatino Linotype", Palatino, serif;
+            margin: 0;
+            padding-top: 30px;
+        }
 
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
+        .outer-table {
+            border: 4px ridge #6b4450;
+            background-color: #331a20;
+            width: 900px;
+            padding: 15px;
+            margin: 0 auto;
+        }
 
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-    }
+        a {
+            color: #d4a5a5;
+            text-decoration: underline;
+        }
 
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-      font-weight: normal;
-      color: #f3e4c5;
-    }
+        a:hover {
+            color: #ffffff;
+            background-color: #4a252f;
+        }
 
-    header p {
-      font-style: italic;
-      color: #d1c4b0;
-    }
+        h1 {
+            font-size: 36pt;
+            font-weight: normal;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-align: center;
+        }
 
-    .top-nav {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      margin: 30px 0;
-      flex-wrap: wrap;
-    }
+        .content-cell {
+            vertical-align: top;
+            text-align: center;
+            padding: 20px;
+        }
 
-    .top-nav a {
-      text-decoration: none;
-      font-size: 16px;
-      background-color: #7a644b;
-      color: #fff9f0;
-      padding: 10px 20px;
-      border: 1px solid #a49077;
-      border-radius: 4px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
+        .image-cell {
+            vertical-align: top;
+            width: 360px;
+            text-align: center;
+        }
 
-    .top-nav a:hover {
-      background-color: #a49077;
-      color: #2c1f12;
-    }
+        .image-border {
+            border: 3px double #e0d8c3;
+            padding: 2px;
+            background-color: #000;
+        }
 
-    figure {
-      text-align: center;
-      margin: 40px 0;
-    }
+        .work-entry {
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
 
-    img {
-      max-width: 100%;
-      border: 1px solid #8b735a;
-    }
+        .work-title {
+            font-size: 16pt;
+            display: block;
+            margin-bottom: 5px;
+        }
 
-    figcaption {
-      font-style: italic;
-      font-size: 14px;
-      color: #d1c4b0;
-      margin-top: 10px;
-    }
+        .work-subtitle {
+            font-size: 11pt;
+            font-style: italic;
+            display: block;
+            color: #bfa8a8;
+        }
 
-    .footer {
-      text-align: center;
-      font-size: 13px;
-      color: #b2a58f;
-      border-top: 1px solid #8b735a;
-      padding-top: 20px;
-      margin-top: 60px;
-    }
-  </style>
+        .author-name {
+            font-size: 12pt;
+            display: block;
+            margin-top: 5px;
+            color: #e0d8c3;
+        }
+
+        .section-title {
+            font-size: 10pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-top: 10px;
+            color: #d4a5a5;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px double #e0d8c3;
+            height: 3px;
+            margin: 20px 0;
+        }
+
+        footer {
+            font-size: 10pt;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Zelo Zelatus</h1>
-    </header>
 
-    <main>
-      <nav class="top-nav" aria-label="Primary navigation">
-        <a href="mystical.html">Mystical Theology</a>
-        <a href="commentaries.html">Biblical Theology</a>
-      </nav>
+<center>
+    <table class="outer-table" cellpadding="10" cellspacing="0">
+        <tr>
+            <td colspan="2">
+                <h1>Zelo Zelatus</h1>
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <!-- Main Content: List of Works -->
+            <td class="content-cell">
+                
+                <div class="work-entry">
+                    <a href="https://files.catbox.moe/ol4zd2.pdf" class="work-title">Draft Translation of the Compendio de Ascética y Mística (Third Edition)</a>
+                    <span class="author-name">Fr. Crisógono de Jesús Sacramentado, O.C.D.</span>
+                    <span class="section-title">First Part: Principles of the Supernatural Life</span>
+                </div>
 
-      <figure>
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/7/74/Peter_Paul_Rubens_166.jpg" 
-          alt="Painting by Peter Paul Rubens depicting Saint Teresa of Avila's vision of the Holy Spirit as a dove">
-        <figcaption>Saint Teresa of Avila's Vision of the Dove by Peter Paul Rubens</figcaption>
-      </figure>
-    </main>
+                <!-- Future entries can be added here -->
 
-    <footer class="footer" lang="la">
-      Zelo Zelatus Sum Pro Domino Deo Exercituum
-    </footer>
-  </div>
+            </td>
+
+            <!-- Image Column -->
+            <td class="image-cell">
+                <img src="https://files.catbox.moe/jem0ba.webp" width="340" class="image-border" alt="Manuscript Illustration">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <hr>
+                <footer>
+                    <font size="1">North Dakota, USA</font>
+                </footer>
+            </td>
+        </tr>
+    </table>
+</center>
+
 </body>
 </html>
